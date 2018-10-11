@@ -2,11 +2,13 @@ package tcp.client;
 import java.io.IOException;
 
 public class TCPClientDriver {
+
 	public static void main(String[] args) {
+		final int MAX = 100;
 		TCPClient client = new TCPClient();
-		int max = 100;
+		
 		try {
-			for (int i = 0; i <= max; i++) {
+			for (int i = 0; i <= MAX; i++) {
 				client.sendFile();
 			}
 		} catch (IOException e) {
