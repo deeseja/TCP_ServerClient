@@ -3,11 +3,13 @@ import java.io.*;
 import java.net.*;
 
 public class TCPServer {
+	final int PORT = 8080;
+	
 	public void readFile() {
 		int bytesRead;
 		ServerSocket serverSocket;
 		try {
-			serverSocket = new ServerSocket(8080);
+			serverSocket = new ServerSocket(PORT);
 			System.out.println("listening");
 			while (true) {
 				Socket clientSocket = null;
