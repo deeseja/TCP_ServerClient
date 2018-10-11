@@ -1,3 +1,4 @@
+package tcp.server;
 import java.io.*;
 import java.net.*;
 
@@ -31,7 +32,6 @@ public class TCPServer {
 				output.close();
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

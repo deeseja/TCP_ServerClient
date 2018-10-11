@@ -1,3 +1,4 @@
+package tcp.client;
 import java.io.IOException;
 
 public class TCPClientDriver {
@@ -9,7 +10,6 @@ public class TCPClientDriver {
 				client.sendFile();
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
