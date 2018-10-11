@@ -8,6 +8,8 @@ public class TCPClient {
 	Socket sock;
 	DataInputStream dis;
 	DataOutputStream dos;
+	String host = "andysmac";
+	int port = 8080;
 	
 	public void sendFile() throws IOException {
 		File myFile = new File("src/file.txt");
@@ -20,7 +22,7 @@ public class TCPClient {
 			dis = new DataInputStream(bis);     
 			dis.readFully(mybytearray, 0, mybytearray.length); 
 		      
-			sock = new Socket("andysmac", 8080);
+			sock = new Socket(host, port);
 		
 			os = sock.getOutputStream();
 		      
